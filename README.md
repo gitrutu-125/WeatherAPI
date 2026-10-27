@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # ☀️ Weather App
 
@@ -81,3 +82,7 @@ For public deployment, avoid exposing your API key in client-side JavaScript. Us
 ## 📄 License
 
 This project is available for learning and educational purposes.
+=======
+# WeatherAPI
+A responsive Weather App built using HTML, CSS, and JavaScript that fetches real-time weather data using WeatherAPI. Users can search for any city to view current temperature, weather conditions, feels-like temperature, humidity, wind speed, and local time through a clean, user-friendly interface.
+>>>>>>> bd87668994066186575f3b6573f1a380bf8cd81c
