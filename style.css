@@ -1,0 +1,166 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #74b9ff, #6c5ce7);
+    color: #fff;
+}
+
+.weather-app {
+    width: 100%;
+    max-width: 450px;
+    padding: 30px 25px;
+    text-align: center;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.17);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(12px);
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    margin-bottom: 25px;
+    color: #f0f0ff;
+}
+
+.search-box {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 13px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+button {
+    padding: 13px 16px;
+    background: #fff;
+    color: #5145cd;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e9e7ff;
+}
+
+button:disabled {
+    opacity: 0.65;
+    cursor: wait;
+}
+
+#message {
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+.weather-card {
+    padding-top: 15px;
+}
+
+.weather-card h2 {
+    font-size: 26px;
+}
+
+.local-time {
+    margin-top: 6px;
+    font-size: 13px;
+    color: #eeeaff;
+}
+
+#weatherIcon {
+    width: 100px;
+    height: 100px;
+    margin: 8px 0 0;
+}
+
+.temperature {
+    font-size: 58px;
+    font-weight: bold;
+}
+
+.condition {
+    margin: 8px 0 24px;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+}
+
+.detail {
+    padding: 13px 5px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    overflow-wrap: anywhere;
+}
+
+.detail span {
+    font-size: 23px;
+}
+
+.detail p {
+    font-size: 12px;
+    margin: 8px 0;
+}
+
+.detail strong {
+    font-size: 13px;
+}
+
+.updated {
+    font-size: 12px;
+    margin-top: 20px;
+    color: #eeeaff;
+}
+
+footer {
+    font-size: 12px;
+    margin-top: 25px;
+    color: #eeeaff;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 360px) {
+    .weather-app {
+        padding: 24px 15px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    button {
+        padding: 12px;
+    }
+}
